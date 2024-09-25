@@ -1,0 +1,32 @@
+name: Build Typst document
+on: 
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: checkout fonts repo
+        uses: actions/checkout@v4
+        with:
+          repository: ckunte/fonts
+          path: fonts
+
+      - name: prep typst
+        uses: typst-community/setup-typst@v3
+      - run: typst compile offshore-lifts.typ --font-path=fonts
+
+      - name: release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            offshore-lifts.pdf
