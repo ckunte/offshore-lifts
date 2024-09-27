@@ -35,19 +35,18 @@
   #side-by-side[
     
   = Agenda
-  - Importance of offshore lifts
-  - Applications
+  - Importance, applications
+  - Capacity limits
   - Lift types and selection
   - Howto carry out safe lifts
   - Importance of lifting analysis
-  - Fabrication challenges
-  - Certification and weighing
+  - Fabrication, certification, weighing
+  - Offshore lifts - some examples
   - Vessel days worldwide stats
-  - 10 questions for a safe lift
-  - Golden rule of lifting
+  - 10 questions, golden rule of lifting
   - Examples of hardware inspection
   - Crane banksman signals
-  - Q&A
+  - QA
 
   ][
     
@@ -64,31 +63,51 @@
   = Importance of lifts
 
   - High risk activity
-
     - Cost (day rates)
-    - Complexity --- personnel + hardware + environment
+    - Complexity: personnel + hardware + Metocean conditions
     - Severity
     - Reputation
 
   ][
   = Applications
 
-  - Yard lifts
-
+  - Yard lifts (quayside)
   - Offshore lifts
-    - Greenfield
-    - Brownfield
-    - Appurtenances upgrade
-    - Mitigations
-    - Subsea
-    - Decommissioning
-    - Pipelay
+    - Greenfield, and brownfield
+    - Appurtenances, mitigations
+    - Subsea, Pipelay, Decommissioning
+
   ]
+
+= Lifting on land _versus_ water
+/ Land: Capacity limited by soil bearing
+/ Seawater: (incompressible, greater buoyancy) #sym.arrow.r Higher capacity
+
+]
+
+#focus-slide[
+
+  = Lifting capacity limits
+
+  _within the industry \~15,000t_
 ]
 
 #centered-slide[
+  
+  Traditionally around #highlight[10,000--15,000t] (exceptions: _Pioneering Spirit_, HMC _Sleipnir_ SSCV, which offer >15,000t capacity via their unique features). 
+
+  Beyond this threshold, if not by crane vessels, then by the *efficiency* of structures themselves *to be made suitable for lifting* -- one time use of higher steel tonnage pumped into the structure is *neither efficient, nor good for ROI*.
+
+  *Float-over* methods evolved, and became popular because of the above.
+
+]
+
+#focus-slide[
 
   = Lift types
+
+  _routine_ \
+  _non-routine_
 
 ]
 #slide[
@@ -105,11 +124,13 @@
 
   - Known weight, shape, COG
 
-  - In calm environment
+  - In calm[er] environment
 
   - Standard rigging + lift equipment
 
   - Inside designated landing area
+
+  - Emphasis on host
 
    ]
 ]
@@ -127,10 +148,12 @@
 
   - Personnel transfer
   - Synthetic sling to dynamic, shock, snatch cond.
-  - Blind lifts
-  - Beyond allowable environment
+  - #highlight[Blind] lifts
+  - Beyond allowable (e.g. squalls, seastate, etc)
   - Lifts with awkward forms, unbalanced, valuable equipment, moving COGs
   - Tandem lifts
+
+  Emphasis on higher risks, and safety concerns; #highlight[coordination challenges], etc.
     
   ]
 ]
@@ -139,9 +162,9 @@
 
   = Lift type selection criteria
 
-  / Single point: Considered generally when no limitations
+  / Single point: Considered generally when no limitations (layout, capacity, etc)
 
-  / Multi-point: Overhang, beyond lift point grid, etc.; unbalanced load distribution
+  / Multi-point: Overhang, beyond lift point grid, etc.; unbalanced load distribution; greater than single hook/crane capacity
 
   / Spreader-aided: When there is no (adequate) clearance to slings
 
@@ -159,9 +182,9 @@
 #slide[
 = How to carry out safe lifts
   #side-by-side[
-    - Safety in design + fab + execution
-    - Weight monitoring + fab control
-    - Crane barge selection
+    - #highlight[Safety in design] + fab + execution
+    - Weight #highlight[monitoring] + fab control
+    - #highlight[Select] crane and vessel type
       - types
       - applicability
       - DP, heave compensation
@@ -169,13 +192,13 @@
       - tugs, anchor handlers
       - block type (single, double)
   ][
-    - Installation procedures
+    - Installation #highlight[procedures]
       - HAZID
       - hardware inspections + cert.
       - sling arrangements
       - OIC procedures
       - weather forecast
-    - Execution
+    - #highlight[Execution]
       - tugger lines
       - banksmen + signalling
       - line of sight
@@ -187,121 +210,174 @@
 
   = Importance of lifting analysis
 
-  - To assess + design structure for installation stresses
+  - To assess + design structure for #highlight[installation stresses]
 
-  - Offers a better idea of layout, weight distribution
+  - Offers insights into weight distribution, COG, (and COB, where relevant)
 
-  - Lifting, if used, one of the critical pre-service conditions in terms of member and joint stresses
+  - Lifting, if employed, one of the critical pre-service conditions in terms of member and joint stresses
 
-  - To capture changes in layout post-design stage tolerances
+  - #highlight[Early assessments can help improve layout, structural efficiency, and ROI]
 
-  - To capture fabrication tolerances in terms of eccentricities when built
+  - To capture #highlight[changes in layout] post-design stage tolerances
+
+  - To capture fabrication tolerances in terms of #highlight[eccentricities] when built
 
 ]
 
 #slide[
+
   #figure(
-    image("/inc/fab-challenges-1.jpg", width: 100%),
-    caption: [Fabrication challenges]
-  ) <fc1>
+      image("/inc/fab-challenges-1.jpg", width: 100%),
+      caption: [Fabrication challenges _(weld access issue #sym.arrow.r incomplete coverage)_]
+    ) <fc1>
+
 ]
 
 #slide[
+
   #figure(
     image("/inc/fab-challenges-2.jpg", width: 100%),
-    caption: [Fabrication challenges (contd.)]
+    caption: [Fabrication challenges _(stiffener as a mitigation)_]
   ) <fc2>
+
 ]
 
 #slide[
+
   #figure(
     image("/inc/hardware-test-cert.png", height: 100%),
-    caption: [Hardware testing certification]
+    caption: [Hardware testing certification _(important)_]
   ) <htc>
+
 ]
 
 #slide[
+
   #figure(
     image("/inc/weight-calib-cert.png", height: 100%),
-    caption: [Weighing, calibration]
+    caption: [Weighing, calibration _(important)_]
   ) <wc>
+
+]
+
+#focus-slide[
+  
+  = Offshore lifts
+
+  _some examples_
+
 ]
 
 #slide[
+
   #figure(
     image("/inc/lift-trad.jpg", width: 100%),
     caption: [Traditional lift by heavy lift vessel (HLV)]
   ) <hlv>
+
 ]
 
 #slide[
+
   #figure(
     image("/inc/lift-semisub.jpg", width: 100%),
     caption: [Lift by semisub. installation vessel (SSIV)]
   ) <ssiv>
+
+]
+#slide[
+
+  #figure(
+    image("/inc/pioneering-spirit.png", width: 100%),
+    caption: [Pioneering Spirit -- In a class of its own]
+  ) <ps>
+
 ]
 
 #slide[
+
+= Malikai TLP installation
+  + TLP loaded out on to the vessel
+  + Transported to site
+  + Vessel begins to submerge
+  + TLP is floated-off the submerged vessel via tugs  
+
+  #figure(
+    image("/inc/inst-malikai.png", width: 100%),
+    caption: [Malikai TLP using Dockwise's _White Marlin_]
+  ) <mal>
+
+]
+
+#slide[
+
   #figure(
     image("/inc/lift-modular.jpg", width: 100%),
     caption: [Modular lift]
   ) <mod>
+
 ]
 
 #slide[
+
   #figure(
     image("/inc/lift-module-e8k.jpg", width: 100%),
     caption: [Modular lift -- E8K]
   ) <e8k>
+
 ]
 
 #slide[
+
   #figure(
     image("/inc/lift-nontrad.jpg", width: 100%),
     caption: [Non-traditional lifts]
   ) <ntl>
+
 ]
 
 #slide[
+
   #figure(
     image("/inc/lift-asart.jpg", width: 100%),
     caption: [Lifting as an art]
   ) <lart>
+
 ]
 
 #slide[
+
   #figure(
     image("/inc/lift-decom.jpg", width: 100%),
     caption: [Decommissioning]
   ) <dco>
+
 ]
 
 #slide[
-  #figure(
-    image("/inc/lift-trad.jpg", width: 100%),
-    caption: [Traditional lift by heavy lift vessel (HLV)]
-  ) <hlv>
-]
 
-#slide[
   #figure(
     image("/inc/lift-blanding.png", width: 100%),
     caption: [Appurtenance upgrade: boat landing]
   ) <bl>
+
 ]
 
 #slide[
+
   #figure(
     image("/inc/lift-cranechart.png", width: 100%),
     caption: [Crane chart -- informative]
   ) <cc>
+
 ]
 
 #slide[
 = Vessel days in 2010 -- worldwide
+
 #table(
   columns: (3fr, auto, 3fr, auto),
-  inset: 16pt,
+  inset: 10pt,
   align: horizon,
   table.header(
     [*_Contractor_*], [*_Vessel Days_*], [*_Contractor_*], [*_Vessel Days_*],
@@ -317,10 +393,12 @@
   [Offshore Specialty], [252], [Grup Servicii Petroliere], [87],
   [V. Ships], [237], [Seaway Heavy Lifting], [29] 
   )
+
 ]
 
 #slide[
   = Guidance and support available with (some) operators
+
   #side-by-side[
   
   - Lifting + hoisting SMEs
@@ -358,42 +436,30 @@
   
   = Standards
 
-  / EP 2005-0264-ST: Lifting and hoisting HSE standard
-
   / ISO 19902 2020: Fixed steel offshore structures
 
   / ISO 19901-3: Topsides structures
 
   / ISO 19901-6: Marine operations
 
+  / EP 2005-0264-ST: Lifting and hoisting HSE standard (Shell)
+
 ]
 
 #slide[
-  
+
   = Ten questions for a safe lift
 
-  + Do you fully understand the procedures?
-
-  + Did you attend the toolbox talk?
-
-  + Has a pre-inspection of the lifting equipment been done, and are the lifting accessories tagged or marked with
-    - A safe working load?
-    - A unique ID number?
-    - A valid certification date?
-
+  + Understand the procedures?
+  + Attended toolbox talk?
+  + Equipment pre-inspected?
+  + Tagged w/ SWL, unique ID, valid certificate?
   + Are all safety devices working?
-
-  + Do you know the person-in-charge of the lift?
-
-  + Are you competent and aware of your task(s)?
-
-  + Is there a current lift plan and JHA, and do you understand the job \+ precautions?
-
-  + Do you know Metocan limits for the lift?
-
-  + Is the lift area controlled, and are you out of the load path (falls, swings, snaps)?
-
-  + Are signalling methods and comm. agreed and clear to you?
+  + Know the person-in-charge (PIC) of lift?
+  + Know the current lift plan, JHA, precautions?
+  + Know Metocean limits for the lift?
+  + Aware of self-competence, tasks assigned?
+  + Know signalling + comms methods?
 
 ]
 
@@ -415,6 +481,12 @@
 
 ]
 
+#focus-slide[
+  
+  = Hardware inspections
+
+]
+
 #slide[
 
   #figure(
@@ -431,6 +503,12 @@
     caption: [Hardware inspection (contd.)]
   ) <hi2>
     
+]
+
+#focus-slide[
+  
+  = Hand signals
+
 ]
 
 #slide[
