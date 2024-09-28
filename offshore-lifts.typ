@@ -288,7 +288,7 @@
 #slide[
 
   #figure(
-    image("/inc/pioneering-spirit.png", width: 100%),
+    image("/inc/pioneering-spirit.jpg", width: 100%),
     caption: [Pioneering Spirit -- In a class of its own]
   ) <ps>
 
